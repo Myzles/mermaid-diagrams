@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mermaid Diagrams: guide</title><link rel="stylesheet" href="style.css"></head><body><main><nav><a href="index.html">Guide</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+<h1>Mermaid Diagrams for Confluence and Jira</h1>
+<p>Write a diagram as text, see it drawn. This guide covers everything the app does.</p>
+<h2>Confluence: add a diagram</h2>
+<ol><li>Edit a page, type <code>/mermaid</code> and pick <strong>Mermaid Diagram</strong>.</li>
+<li>Paste your Mermaid code, or choose a starter from <strong>Templates</strong>.</li>
+<li>Add a caption if you like, pick a colour theme and alignment, then click <strong>Save</strong>.</li></ol>
+<p>To change a diagram later, edit the page, select the diagram and click the pencil icon.</p>
+<p>Pasting straight from ChatGPT, Claude, GitHub or a README is fine. The app removes the <code>```mermaid</code> fences, stray text around them, odd spaces and Windows line breaks.</p>
+<h2>Reading a diagram</h2>
+<ul><li>Hover to show the toolbar: zoom in, zoom out, reset, full screen, download PNG, copy code.</li>
+<li>Hold Ctrl (Cmd on Mac) and scroll to zoom. Drag to move around when zoomed. Double-click to reset.</li>
+<li>Links written with <code>click A href "https://..."</code> open in a new tab.</li>
+<li>The <strong>Match Atlassian theme</strong> setting follows light and dark mode.</li></ul>
+<h2>PDF and Word export</h2>
+<p>When you save a diagram, the app attaches a picture of it to the page (named <code>mermaid-diagram-....png</code>). Exports use that picture. Diagrams added before this picture existed export as their Mermaid code; open and save them once to add the picture.</p>
+<h2>Jira: diagrams on an issue</h2>
+<p>Open an issue, click the <strong>Mermaid Diagrams</strong> button under the summary, then <strong>Add diagram</strong>. You can add several. Anyone who can edit the issue can edit its diagrams.</p>
+<h2>Jira: issue map</h2>
+<p>The <strong>Issue map</strong> tab draws the issue together with its parent, child issues, subtasks and linked issues ("blocks", "relates to" and so on). Boxes are grey for To do, blue for In progress and green for Done. Click a box to open that issue. Large epics show the first 60 issues.</p>
+<h2>Supported diagrams</h2>
+<p>Everything in the current Mermaid release, including flowchart, sequence, class, state, entity relationship, Gantt, user journey, pie, quadrant, timeline, mind map, Git graph, C4, sankey, XY chart, block, architecture, kanban, packet, radar and treemap. Full syntax: <a href="https://mermaid.js.org/intro/syntax-reference.html">mermaid.js.org</a>.</p>
+<h2>Fixing errors</h2>
+<p>If the code has a mistake, the editor names the line and keeps showing your last working diagram until it's fixed. The most common cause is a missing first line such as <code>flowchart TD</code> or <code>sequenceDiagram</code>.</p>
+<footer>Mermaid Diagrams for Confluence and Jira. Not affiliated with Atlassian or the Mermaid project.</footer></main></body></html>
