@@ -2,6 +2,8 @@
 <h1>Mermaid Canvas for Confluence and Jira</h1>
 <p>Write a diagram as text, see it drawn. This guide covers everything the app does.</p>
 <h2>Confluence: add a diagram</h2>
+<p>Mermaid is a way to write a diagram as text. For example "A --> B" draws box A with an arrow to box B. You do not need to learn it: pick a template and change the words.</p>
+<img src="1-editor.png" alt="Editor with code on the left and the drawn diagram on the right" style="max-width:100%">
 <ol><li>Edit a page, type <code>/mermaid</code> and pick <strong>Mermaid Diagram</strong>.</li>
 <li>Paste your Mermaid code, or choose a starter from <strong>Templates</strong>.</li>
 <li>Add a caption if you like, pick a colour theme and alignment, then click <strong>Save</strong>.</li></ol>
@@ -22,4 +24,5 @@
 <p>Everything in the current Mermaid release, including flowchart, sequence, class, state, entity relationship, Gantt, user journey, pie, quadrant, timeline, mind map, Git graph, C4, sankey, XY chart, block, architecture, kanban, packet, radar and treemap. Full syntax: <a href="https://mermaid.js.org/intro/syntax-reference.html">mermaid.js.org</a>.</p>
 <h2>Fixing errors</h2>
 <p>If the code has a mistake, the editor names the line and keeps showing your last working diagram until it's fixed. The most common cause is a missing first line such as <code>flowchart TD</code> or <code>sequenceDiagram</code>.</p>
+<h2>Moving from another Mermaid app</h2><p>Open the old macro, copy the Mermaid text, insert Mermaid Diagram, paste and Save. Code fences, stray text and odd spaces are cleaned on paste. Diagrams in the other app keep working until you remove that app.</p>
 <footer>Mermaid Canvas for Confluence and Jira. Not affiliated with Atlassian or the Mermaid project.</footer></main></body></html>
